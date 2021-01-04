@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Fish Creek Animal Hospital - Contact Us</title>
+<link rel="stylesheet" href="fishcreek.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+function validateForm(){
+if(document.forms[0].myEmail.value==""){
+	alert("please enter an email address.");
+	return false;
+}
+return true;
+}
+</script>
+</head>
+<div id="wrapper">
+<header><h1>Contact Fish Creek</h1></header>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="askvet.html">Ask a Vet</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="shop.html">Shop</a></li>
+</ul>
+</nav>
+<body>
+<main>
+<p>Required fields are marked with an asterisk (*)</p>
+<form method="post" action="http://webdevbasics.net/scripts/fishcreek.php"
+		onsubmit="return validateForm();">
+<label for="myName">Name:</label>
+ <input type="text" name="myName" id="myName"
+    placeholder="name here"><br>
+<label for="myEmail">E-mail:</label>
+  <input type="email" name="myEmail" id="myEmail"
+	placeholder="emails only"><br>
+<label for="myComments">Comments:</label>
+  <input type="textarea" rows="4" cols="40">
+<input type="submit" value="Send Now" id="mySubmit">
+
+</form>
+</main>
+<footer>
+Copyright &copy; 2014 Fish Creek Animal Hospital<br>
+cray547@icloud.com
+</footer>
+</body>
+</div>
+</html>
